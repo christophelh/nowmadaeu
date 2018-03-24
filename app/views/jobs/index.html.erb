@@ -1,33 +1,28 @@
 <div class="banner " style="background-image: url('<%= image_path("banner.jpg")%>');">
 
-<div class="wrapperjob">
+  <div class="wrapperjob">
 
-  <div class="jobcontent">
- <!--    <h3>There are currently <%#=Job.count%> on Nowmada</h3> -->
+    <div class="jobcontent">
+     <!--    <h3>There are currently <%#=Job.count%> on Nowmada</h3> -->
 
 
-    <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
-    <div class="jobbox">
+     <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
+     <div class="jobbox">
       <div class="jobdetailsright">
-      <ul>
-        <% @jobs.each do |job| %>
-        <ol>
-          <%=link_to job.title, job_path(job)%>
-          <p><span style="color:#777676"><%=job.compagny%></span> </p>
-          <%# if current_user && current_user.admin? %>
-          <%= link_to job_path(job), method: :delete, data: { confirm: 'Are you sure?' } do %>
-          <p>Delete job</p>
+        <ul>
+          <% @jobs.each do |job| %>
+          <ol>
+            <%=link_to job.title, job_path(job)%>
+            <p><span style="color:#777676"><%=job.compagny%></span> </p>
+            <% if current_user && current_user.admin? %>
+            <%= link_to job_path(job), method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <p>Delete job</p>
+            <% end %>
+            <% end %>
+          </ol>
           <% end %>
-          <% end %>
-        </ol>
-        <% end %>
-      </ul>
+        </ul>
+      </div>
     </div>
-
-
-
-
-
-
   </div>
 </div>
