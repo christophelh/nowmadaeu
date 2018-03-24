@@ -10,6 +10,7 @@
 puts 'Cleaning Db'
 
 User.destroy_all
+Job.destroy_all
 
 puts 'Creating users ... '
 
@@ -22,3 +23,13 @@ Chris.save!
 Intern.save!
 
 puts 'Users created... '
+
+
+
+
+
+
+
+
+
+

@@ -17,18 +17,11 @@
 
     <div class="apply">
      <button class="btn-apply">
-     <%= link_to "Interested apply", "https://#{@job.url}?utm=nowmada" %>
+     <%= link_to "Interested apply", "#{@job.url}?utm=nowmada" %>
      </button>
      <button class="btn-apply">
-      <%=link_to "All remoto jobs", jobs_path%>
+      <%=link_to "All remoto jobs", root_path%>
     </button>
-
-
-    </div>
-
-
-
-
   </div>
 </div>
 
