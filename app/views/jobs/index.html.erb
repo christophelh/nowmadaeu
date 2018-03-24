@@ -13,8 +13,8 @@
           <% @jobs.each do |job| %>
           <ol>
             <%=link_to job.title, job_path(job)%>
-            <p><span style="color:#777676"><%=job.compagny%></span> </p>
-            <% if current_user && current_user.admin? %>
+            <p><span style="color:#777676"><%=job.company%></span> </p>
+            <% if current_user && current_user.role? %>
             <%= link_to job_path(job), method: :delete, data: { confirm: 'Are you sure?' } do %>
             <p>Delete job</p>
             <% end %>

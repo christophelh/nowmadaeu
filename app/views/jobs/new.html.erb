@@ -2,10 +2,11 @@
 
 <%= simple_form_for @job do |f| %>
   <%= f.input :title %>
-  <%= f.input :compagny %>
-  <%= f.input :description, as: :text, autofocus: true, :input_html => {:style => 'width: 100%', :rows => 5}, :class => "tinymce" %>
+  <%= f.input :company %>
+  <%= f.input :desc, as: :text, autofocus: true, :input_html => {:style => 'width: 100%', :rows => 5}%>
   <%= f.input :url %>
-  <%= f.input :email %>
+  <%= f.input :type %>
+  <%= f.input :contact %>
   <%= f.button :submit %>
 <% end %>
 

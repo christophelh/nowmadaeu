@@ -4,13 +4,13 @@
 
 <div class="wrapperjob">
   <div class="jobcontent">
-    <h3><b><%= @job.title%></b>-<b><%= @job.compagny.html_safe%></b></h3>
+    <h3><b><%= @job.title%></b>-<b><%= @job.company%></b></h3>
 
     <div class="description">
-    <%= simple_format(@job.description) %>
+    <%= simple_format(@job.desc) %>
     </div>
     <div class="email">
-      <p>Email:<%= @job.email %></p>
+      <p>Email:<%= @job.contact %></p>
     </div>
 
     <div class="apply">

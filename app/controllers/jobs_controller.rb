@@ -50,7 +50,7 @@ class JobsController < ApplicationController
   end
 
   def job_params
-    params.require(:job).permit(:title, :compagny, :description, :url)
+    params.require(:job).permit(:title, :company, :desc, :url, :contact, :category)
   end
 end
 
