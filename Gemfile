@@ -13,6 +13,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'devise'
+gem 'carrierwave', '~> 1.2'
+gem 'figaro'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
