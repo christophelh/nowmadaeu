@@ -1,0 +1,23 @@
+.card{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+}
+
+
+
+.jobtitle{
+  padding-left: 2em;
+}
+
+.jobtitle h2{
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+
+.delete{
+  font-size: 12px;
+}

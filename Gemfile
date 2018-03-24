@@ -15,6 +15,8 @@ gem 'webpacker'
 gem 'devise'
 gem 'carrierwave', '~> 1.2'
 gem 'figaro'
+gem 'cloudinary'
+
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'

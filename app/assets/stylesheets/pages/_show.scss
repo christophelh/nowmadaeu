@@ -1,3 +1,6 @@
+
+
+
 .wrapperjob{
   display: grid;
   grid-template-rows: 1fr;
@@ -15,7 +18,7 @@
 }
 .jobcontent{
   grid-column: 2/3;
-  padding: 2em 3em 1em 3em;
+  padding: 2em 1em 1em 1em;
   background-color: #ffffffd9;
 }
 
@@ -77,4 +80,25 @@ ol:hover{
     padding: 0.5em;
     margin-right: 1em;
     border-radius: 5px;
+}
+
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.wrapperjob{
+  display: block;
+}
+
+.card{
+  display: block;
+}
+
+.photocard{
+      text-align: center;
+}
+
 }
