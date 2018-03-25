@@ -10,8 +10,19 @@
 
 .bannershow{
    height: 30vh;
+
+   text-align: center;
 }
 
+.taglineshow{
+  background-color: black;
+  padding-top: 1em;
+}
+
+
+.bannershow h3, p{
+  color: white;
+}
 
 .wrapperjob{
 
@@ -23,8 +34,9 @@
 }
 
 
-.jobcontent{
+.jobcontent h3{
 color: black;
+font-weight: bold;
 }
 
 .description{
@@ -88,6 +100,14 @@ ol:hover{
 }
 
 
+
+//social icons
+
+.social{
+  background-color: black;
+  padding: 0.5em;
+  margin-bottom: 0px;
+}
 
 @media only screen
   and (min-device-width: 320px)
