@@ -2,7 +2,7 @@
   <!-- Logo -->
 
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png", height: 79 %>
+  <%= image_tag "logo.png", height: 79 %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -10,21 +10,21 @@
 
     <% if user_signed_in? %>
 
-      <!-- Links when logged in -->
-      <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
-      <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item">
-        <ul>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-               <%= t(".sign_out", default: "Log out") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
+    <!-- Links when logged in -->
+    <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
+    <!-- Avatar with dropdown menu -->
+    <div class="navbar-wagon-item">
+      <ul>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+          <%= t(".sign_out", default: "Log out") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
     <% else %>
-      <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <!-- Login link (when logged out) -->
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
@@ -33,9 +33,13 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+          <%= t(".sign_out", default: "Log out") %>
+          <% end %>
+        </li>
+
       </ul>
     </div>
   </div>
