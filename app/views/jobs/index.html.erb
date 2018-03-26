@@ -33,6 +33,7 @@
       <ul>
         <% @jobs.each do |job| %>
         <ol class ="card">
+
           <div class="photocard">
             <%= cl_image_tag job.photo, height: 50, width: 50, crop: :fill %>
           </div>
@@ -44,6 +45,11 @@
             <p><span style="color:#777676">
               <%=job.company%></span> </p>
             </div>
+            <div class="date">
+                <p><span style="color:#000;font-style:italic";>
+                Publicado <%= job.created_at.strftime("%d.%m") %></span>
+                </p>
+             </div>
           </ol>
           <% end %>
         </ul>

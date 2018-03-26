@@ -1,7 +1,8 @@
 .card{
   display: flex;
   // align-items: space-between;
-  align-items: center;
+  // align-items: center;
+  justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
 }
@@ -9,9 +10,11 @@
 
 
 .jobtitle{
-  padding-left: 2em;
   text-align: left;
+  margin-right: 18em;
 }
+
+
 
 .jobtitle h2{
   font-size: 1.1em;
@@ -22,4 +25,19 @@
 
 .delete{
   font-size: 12px;
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.jobtitle{
+  padding-left: 2em;
+  text-align: center;
+  margin-right: 0em;
+}
+
+
 }
