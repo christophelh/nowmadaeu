@@ -22,9 +22,14 @@ class JobsController < ApplicationController
     end
   end
 
+  def edit
+    @job = Job.find(params[:id])
+  end
+
 
 
   def update
+     @job = Job.find(params[:id])
     if @job.update(job_params)
       redirect_to @job, notice: 'Job was successfully updated.'
     else
@@ -39,8 +44,9 @@ class JobsController < ApplicationController
 
 
   def destroy
+    @job = Job.find(params[:id])
     @job.destroy
-    redirect_to jobs_url, notice: 'job was successfully destroyed.'
+    redirect_to jobs_path, notice: 'job was successfully destroyed.'
   end
 
   private

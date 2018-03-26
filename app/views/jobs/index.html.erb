@@ -1,62 +1,49 @@
 <div class="banner " style="background-image: url('<%= image_path("bg3.jpg")%>');">
   <div class="tagline">
 
-  <h2>  Portal de empleo remoto y recursos en español
-</h2>
-  <p> Subscríbete para reciber las últimas oportunidades cada semana</p>
+    <h2>  Portal de empleo remoto y recursos en español
+    </h2>
+    <p> Subscríbete para reciber las últimas oportunidades cada semana</p>
 
-  <form action="https://nowmada.us17.list-manage.com/subscribe/post?u=06681d916dc998e5e02141ce6&amp;id=299f6fa8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
+    <form action="https://nowmada.us17.list-manage.com/subscribe/post?u=06681d916dc998e5e02141ce6&amp;id=299f6fa8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
 
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@email.com" required>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups - ok-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06681d916dc998e5e02141ce6_299f6fa8b7" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-  </form>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@email.com" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups - ok-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06681d916dc998e5e02141ce6_299f6fa8b7" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+    </form>
 
+  </div>
 </div>
-</div>
 
-  <div class="wrapperjob">
+<div class="wrapperjob">
 
 
-    <div class="jobcontent">
-
+  <div class="jobcontent">
 
 
 
 
-     <div class="jobbox">
-      <h4>Esta semana en Nowmada</h4>
-      <div class="jobdetailsright">
-        <ul>
-          <% @jobs.each do |job| %>
-          <ol class ="card">
-              <div class="photocard">
-                <%= cl_image_tag job.photo, height: 50, width: 50, crop: :fill %>
-                </div>
 
-              <div class="jobtitle">
-                <h2>
-                <%=link_to job.title, job_path(job)%>
-                </h2>
-                <p><span style="color:#777676, text-align:center">
+   <div class="jobbox">
+    <h4>Esta semana en Nowmada</h4>
+    <div class="jobdetailsright">
+      <ul>
+        <% @jobs.each do |job| %>
+        <ol class ="card">
+          <div class="photocard">
+            <%= cl_image_tag job.photo, height: 50, width: 50, crop: :fill %>
+          </div>
+
+          <div class="jobtitle">
+            <h2>
+              <%=link_to job.title, job_path(job)%>
+            </h2>
+            <p><span style="color:#777676, text-align:center">
               <%=job.company%></span> </p>
-              </div>
-
-
-              <div class="delete">
-              <% if current_user && current_user.role? %>
-              <%= link_to job_path(job), method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <p>Delete job</p>
-              <% end %>
-              <% end %>
-
-              </div>
-
-
-
+            </div>
           </ol>
           <% end %>
         </ul>
