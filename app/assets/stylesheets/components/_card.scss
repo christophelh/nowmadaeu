@@ -1,7 +1,7 @@
 .card{
   display: flex;
   // align-items: space-between;
-  justify-content: space-evenly;
+  align-items: center;
   padding: 20px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
 }
@@ -10,7 +10,7 @@
 
 .jobtitle{
   padding-left: 2em;
-  text-align: left;
+  text-align: center;
 }
 
 .jobtitle h2{

@@ -39,7 +39,7 @@
 
           <% if current_user && current_user.role? %>
             <%= link_to job_path(@job), method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <p><span style="color:blue"> Delete job</p>
+              <p><span style="color:black"> Delete job</p>
               <p><%= link_to 'Edit', edit_job_path%></p>
             <% end %>
           <% end %>
