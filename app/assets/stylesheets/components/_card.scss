@@ -30,13 +30,14 @@ ol:hover{
   border-left: 5px solid #199fb7;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     transition: width 2s;
-    background-color: beige;
+    background-color: #95d8d21f;
 }
 
 
 
 .photocard{
   grid-column: 1 / 2;
+  margin-top: 1em;
 }
 
 .jobtitle{
