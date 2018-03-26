@@ -1,17 +1,25 @@
 .card{
-  display: flex;
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+  grid-template-row: 100%;
+  grid-gap: 10px;
+
   // align-items: space-between;
   // align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
 }
 
 
 
+.photocard{
+  grid-column: 1 / 2;
+}
+
 .jobtitle{
+  grid-column: 2 / 3;
   text-align: left;
-  margin-right: 18em;
 }
 
 
@@ -22,6 +30,10 @@
   font-weight: 800;
 }
 
+
+.date{
+  grid-column: 3 / 4;
+}
 
 .delete{
   font-size: 12px;
