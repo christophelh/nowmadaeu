@@ -37,7 +37,7 @@
           </button>
           <div class="delete">
 
-          <% if current_user && current_user.role? %>
+          <% if current_user && current_user.skills == false %>
             <%= link_to job_path(@job), method: :delete, data: { confirm: 'Are you sure?' } do %>
               <p><span style="color:black"> Delete job</p>
               <p><%= link_to 'Edit', edit_job_path%></p>

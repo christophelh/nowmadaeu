@@ -14,9 +14,9 @@ Job.destroy_all
 
 puts 'Creating users ... '
 
-Cris = User.new(email: "cris@nowmada.eu", password: "123456", role: "true")
-Chris = User.new(email: "chris@nowmada.eu", password: "123456", role: "true")
-Intern = User.new(email: "intern@nowmada.eu", password: "123456", role: "false")
+Cris = User.new(email: "cris@nowmada.eu", password: "123456", skills: "true")
+Chris = User.new(email: "chris@nowmada.eu", password: "123456", skills: "false")
+Intern = User.new(email: "intern@nowmada.eu", password: "123456", skills: "false")
 
 Cris.save!
 Chris.save!
