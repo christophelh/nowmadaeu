@@ -12,15 +12,13 @@
 
     <!-- Links when logged in -->
     <%= link_to 'Add a new job', new_job_path, class: 'btn btn-primary' %>
+
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
-      <ul>
-        <li>
-          <%= link_to destroy_user_session_path, method: :delete do %>
+
+          <%= link_to destroy_user_session_path, method: :delete, class: 'btn btn-danger'  do %>
           <%= t(".sign_out", default: "Log out") %>
           <% end %>
-        </li>
-      </ul>
     </div>
     <% else %>
     <!-- Login link (when logged out) -->
