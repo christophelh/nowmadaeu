@@ -22,6 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 #gem 'jbuilder', '~> 2.5'
 
+
 gem 'bootstrap-sass'
 gem 'simple_form'
 ruby '2.3.5'

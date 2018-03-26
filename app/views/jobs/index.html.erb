@@ -1,9 +1,9 @@
 <div class="banner " style="background-image: url('<%= image_path("bg3.jpg")%>');">
   <div class="tagline">
 
-    <h2>  Portal de empleo remoto y recursos en español
-    </h2>
-    <p> Subscríbete para reciber las últimas oportunidades cada semana</p>
+    <h1>  Portal de empleo remoto y recursos en español
+    </h1>
+    <h3> Subscríbete para reciber las últimas oportunidades cada semana</h3>
 
     <form action="https://nowmada.us17.list-manage.com/subscribe/post?u=06681d916dc998e5e02141ce6&amp;id=299f6fa8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -39,14 +39,14 @@
           </div>
 
           <div class="jobtitle">
-            <h2>
+            <h5>
               <%=link_to job.title, job_path(job)%>
-            </h2>
+            </h5>
             <p><span style="color:#777676">
               <%=job.company%></span> </p>
             </div>
             <div class="date">
-                <p><span style="color:#000;font-style:italic";>
+                <p small><span style="color:#000;font-style:italic;font-size: 12px";>
                 Publicado <%= job.created_at.strftime("%d.%m") %></span>
                 </p>
              </div>
@@ -56,4 +56,8 @@
       </div>
     </div>
   </div>
+
+
+
+
 
