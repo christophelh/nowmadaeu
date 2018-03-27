@@ -16,6 +16,7 @@ gem 'devise'
 gem 'carrierwave', '~> 1.2'
 gem 'figaro'
 gem 'cloudinary'
+gem 'friendly_id', '~> 5.1.0'
 
 
 gem 'coffee-rails', '~> 4.2'

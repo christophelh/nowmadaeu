@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-
+attr_accessor :slug
   before_action :set_job, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
@@ -39,7 +39,7 @@ class JobsController < ApplicationController
 
 
   def show
-    @job  = Job.find(params[:id])
+    @job  = Job.friendly.find(params[:id])
     @user = current_user
   end
 
@@ -53,11 +53,11 @@ class JobsController < ApplicationController
   private
 
   def set_job
-    @job = Job.find(params[:id])
+    @job = Job.friendly.find(params[:id])
   end
 
   def job_params
-    params.require(:job).permit(:title, :company, :desc, :url, :contact, :category , :photo , :photo_cache)
+    params.require(:job).permit(:title, :company, :desc, :url, :contact, :category , :photo , :photo_cache, :slug)
   end
 end
 
