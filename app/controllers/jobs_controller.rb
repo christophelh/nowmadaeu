@@ -7,6 +7,8 @@ attr_accessor :slug
   def index
     @jobs = Job.all.order("created_at DESC")
     @user = current_user
+    @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
+
   end
 
   def new
@@ -41,6 +43,7 @@ attr_accessor :slug
   def show
     @job  = Job.friendly.find(params[:id])
     @user = current_user
+    @meta_title = meta_title "Trabajo remoto #{@job.category} en español"
   end
 
 

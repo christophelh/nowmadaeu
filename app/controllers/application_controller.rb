@@ -11,6 +11,13 @@ def default_url_options
   { host: ENV['HOST'] || 'localhost:3000' }
 end
 
+  BRAND_NAME = 'Nowmada'.freeze
+
+def meta_title(title)
+    [title, BRAND_NAME].reject(&:empty?).join(' | ')
+end
+
+
   #   def skip_pundit?
   #   devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
   # end

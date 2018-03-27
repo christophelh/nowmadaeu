@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><%= meta_title %></title>
+<title><%= @meta_title ? @meta_title : ApplicationController::BRAND_NAME %></title>
 <meta name="description" content="<%= meta_description %>">
 <%= favicon_link_tag asset_path('favicon.png'), :rel => 'icon', :type =>  'image/png' %>
 
