@@ -20,6 +20,20 @@
 }
 
 
+.taglineshow h3{
+  font-family: lato;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.taglineshow h4{
+  font-family: lato;
+  font-size: 21px;
+  font-weight: 400;
+  color: white;
+
+}
+
 .bannershow h3, p{
   color: white;
 }
@@ -39,14 +53,19 @@
 
 .jobcontent h3{
   color: black;
+  font-family: nunito;
+  font-weight: 600;
+  padding-bottom: 15px;
+  font-size: 21px;
 }
 
 .description p{
-  font-size: 18px;
+  font-size: 15.4px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
   color: black;
-  font-weight: normal;
+  font-weight: 200;
+  font-family: nunito;
 
 }
 
@@ -112,6 +131,10 @@
 
 .photocard{
       text-align: center;
+}
+
+.description p{
+  font-size: 14.4px;
 }
 
 }
