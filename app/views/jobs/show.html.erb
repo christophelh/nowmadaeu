@@ -29,12 +29,10 @@
 
 
         <div class="apply">
-          <button class="btn-apply">
-           <%= link_to "Aplicar", "#{@job.url}?utm=nowmada",target: "_blank"%>
-          </button>
-          <button class="btn-apply">
-            <%=link_to "Volver", root_path%>
-          </button>
+
+           <%= link_to "Aplicar", "#{@job.url}?utm=nowmada",target: "_blank", class: 'btnshow'%>
+            <%=link_to "Volver", root_path, class: 'btn btn-primary', class: 'btnshow'%>
+
           <div class="delete">
 
           <% if current_user && current_user.skills == false %>

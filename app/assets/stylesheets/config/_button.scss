@@ -1,0 +1,22 @@
+.btnshow {
+    color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    border: 0;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.6875;
+    padding: .5625em 1.5em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    max-width: 100%;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    background: #b7b7b7;
+    margin-top: 1em;
+    background-color: $blue;
+}
