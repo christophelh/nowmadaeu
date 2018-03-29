@@ -1,14 +1,15 @@
 # frozen_string_literal: true
-
+require 'date'
 class JobsController < ApplicationController
   attr_accessor :slug
   before_action :set_job, only: %i[show edit update destroy]
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-    @jobs = Job.all.order('created_at DESC')
+     @jobs = Job.where(category: 'marketing').order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
+    @jobs2 = Job.all.order("created_at DESC")
   end
 
   def new
