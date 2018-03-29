@@ -6,8 +6,8 @@ class JobsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-     @weekjobs = Job.where('created_at <= ? and created_at > ?', Date.today, Date.today - 1).order("created_at DESC")
-      @alljobs = Job.where('created_at > ?', Date.today - 7).order("created_at DESC")
+     @weekjobs = Job.where('created_at <= ? and created_at > ?', Date.today, Date.today - 6 ).order("created_at DESC")
+      @alljobs = Job.where('created_at >= ?', Date.today - 7).order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
   end
