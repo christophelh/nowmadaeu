@@ -25,7 +25,7 @@ class JobsController < ApplicationController
   end
 
   def edit
-    @job = Job.find(params[:id])
+    @job = Job.friendly.find(params[:id])
   end
 
   def update
@@ -44,7 +44,7 @@ class JobsController < ApplicationController
   end
 
   def destroy
-    @job = Job.find(params[:id])
+    @job = Job.friendly.find(params[:id])
     @job.destroy
     redirect_to root_path, notice: 'job was successfully destroyed.'
   end
