@@ -50,6 +50,27 @@ ol:hover{
 }
 
 
+.datetitle{
+  background-color: #efefef;
+  font-size: 14.4px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.datetitle ol{
+    float: left;
+    clear: left;
+    width: 100%;
+    margin: 0.2em 0;
+    padding: 0.5em 0.8em;
+    list-style: none;
+    background-color: #95d8d21f;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
 
 .photocard{
   grid-column: 1 / 2;
