@@ -54,6 +54,43 @@
           <% end %>
         </ul>
       </div>
+
+        <div class="cardquestion">
+          <div class="question">
+            <h4>Have you ever worked in a remote job ?</h4>
+
+          <form id="myForm" action="comment.php" method="post">
+            <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+          </form>
+        </div>
+       </div>
+       <div class="jobbox">
+       <div class="jobdetailsright">
+         <ul>
+           <% @jobs2.each do |job| %>
+           <ol class ="card">
+
+             <div class="photocard">
+               <%= cl_image_tag job.photo, height: 50, width: 50, crop: :fill %>
+             </div>
+
+             <div class="jobtitle">
+               <h5>
+                 <%=link_to job.title, job_path(job)%>
+               </h5>
+               <p><span style="color:#777676">
+                 <%=job.company%></span> </p>
+               </div>
+               <div class="date">
+                   <p small><span style="color:#000;font-style:italic;font-size: 12px";>
+                   Publicado <%= job.created_at.strftime("%d.%m") %></span>
+                   </p>
+                </div>
+             </ol>
+             <% end %>
+           </ul>
+         </div>
     </div>
   </div>
 

@@ -6,7 +6,8 @@ class JobsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-     @jobs = Job.where(category: 'marketing').order("created_at DESC")
+     # @jobs = Job.where(category: 'marketing').order("created_at DESC")
+    @jobs = Job.all.order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
     @jobs2 = Job.all.order("created_at DESC")

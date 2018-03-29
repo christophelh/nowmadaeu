@@ -8,6 +8,17 @@
 }
 
 
+.cardquestion{
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+  grid-template-row: 100%;
+  grid-gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+  background-color: blue;
+
+}
+
 .card h3, h4 , h5 , p{
   font-family: $body-font;
 }
@@ -69,6 +80,21 @@ ol:hover{
 
 .delete{
   font-size: 12px;
+}
+
+
+// Unique card for question
+
+
+.question{
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.question h4{
+  font-weight: bold;
+  font-family: $body-font;
+  color: #1D3863;
 }
 
 
