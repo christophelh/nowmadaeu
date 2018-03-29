@@ -10,7 +10,7 @@ class JobsController < ApplicationController
     @jobs = Job.all.order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
-    @jobs2 = Job.all.order("created_at DESC")
+    # @jobs2 = Job.all.order("created_at DESC")
   end
 
   def new
