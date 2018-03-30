@@ -30,7 +30,7 @@ class JobsController < ApplicationController
   end
 
   def update
-    @job = Job.find(params[:id])
+    @job = Job.friendly.find(params[:id])
     if @job.update(job_params)
       redirect_to @job, notice: 'Job was successfully updated.'
     else
