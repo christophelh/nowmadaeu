@@ -51,7 +51,7 @@
             </div>
           </ol>
           <% end %>
-        </ul>
+
 
 
         <ol class="card">
@@ -70,6 +70,7 @@
              </div>
         </div>
         </ol>
+        </ul>
 
        <!-- <div class="jobdetailsright"> -->
 
@@ -91,13 +92,12 @@
              <p><span style="color:#777676">
                <%=job.company%></span> </p>
              </div>
-             <div class="date">
-               <p small><span style="color:#000;font-style:italic;font-size: 12px";>
-                 Publicado <%= job.created_at.strftime("%d.%m") %>
-                   <%= Date.today %>
-                 </span>
-               </p>
-             </div>
+            <div class="date">
+              <p small><span style="color:#000;font-style:italic;font-size: 12px";>
+                <% days = (Date.today - job.created_at.to_date).to_i  %>
+                Publicado <%= days %> día(s)</span>
+              </p>
+            </div>
            </ol>
            <% end %>
          </ul>
