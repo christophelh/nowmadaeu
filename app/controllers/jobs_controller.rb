@@ -11,7 +11,7 @@ class JobsController < ApplicationController
      #  @alljobs = Job.where('created_at > ?', (Date.today - 6)).order("created_at DESC")
 
      @weekjobs = Job.past_week.order("created_at DESC")
-     @alljobs = Job.before(Date.today - 7 )
+     @alljobs = Job.before(Date.today - 6 )
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
   end
