@@ -1,12 +1,7 @@
-# frozen_string_literal: true
 
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
-  "https://github.com/#{repo_name}.git"
-end
-
+ruby '2.3.5'
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
 gem 'devise'
@@ -18,6 +13,7 @@ gem 'rubocop', '~> 0.54.0', require: false
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
+gem 'by_star', git: "git://github.com/radar/by_star"
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
@@ -26,7 +22,7 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'bootstrap-sass'
 gem 'simple_form'
-ruby '2.3.5'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

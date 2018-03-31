@@ -43,10 +43,10 @@ ol{
 }
 
 ol:hover{
-  border-left: 5px solid #199fb7;
+  border-left: 5px solid $blue;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     transition: width 2s;
-    background-color: #95d8d21f;
+    background-color: #66a4d01f;
 }
 
 

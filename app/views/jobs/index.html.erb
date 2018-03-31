@@ -26,7 +26,7 @@
 
 
       <ul>
-        <ol class ="datetitle">
+        <ol class ="datetitle" id="time">
           <p>Últimas oportunidades</p>
         </ol>
         <% @weekjobs.each do |job| %>
@@ -54,21 +54,16 @@
         </ul>
 
 
-<!--         <div class="cardquestion">
+      <!--   <div class="cardquestion">
           <div class="question">
-            <h4>Have you ever worked in a remote job ?</h4>
-
-          <form id="myForm" action="comment.php" method="post">
-            <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
-            <label class="checkbox-inline"><input type="checkbox" value="">No</label>
-          </form>
+            <h4>Sugienos en facebook para </h4>
+          </div>
         </div>
-      </div> -->
-
+ -->
        <!-- <div class="jobdetailsright"> -->
 
         <ul>
-          <ol class ="datetitle">
+          <ol class ="datetitle" id="time">
             <p>Oportunidades anteriores</p>
           </ol>
          <% @alljobs.each do |job| %>
@@ -87,7 +82,9 @@
              </div>
              <div class="date">
                <p small><span style="color:#000;font-style:italic;font-size: 12px";>
-                 Publicado <%= job.created_at.strftime("%d.%m") %></span>
+                 Publicado <%= job.created_at.strftime("%d.%m") %>
+                   <%= Date.today %>
+                 </span>
                </p>
              </div>
            </ol>
