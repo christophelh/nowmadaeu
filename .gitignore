@@ -25,3 +25,7 @@ yarn-debug.log*
 
 # Ignore application configuration
 /config/application.yml
+
+#ignore sitemap
+/public/sitemap.xml.gz
+.sitemap.xml.gz.swp
