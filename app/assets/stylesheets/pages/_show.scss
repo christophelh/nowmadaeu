@@ -17,7 +17,7 @@
 }
 
 .taglineshow{
-  // background-color: black;
+  background-color: black;
   padding-top: 1em;
 }
 
@@ -39,6 +39,7 @@
 
 .bannershow h3, p{
   color: white;
+
 }
 
 .datetitle p{
@@ -57,8 +58,26 @@
   padding: 2em 1em 1em 1em;
   background-color: #ffffffd9;
   padding-top: 0px;
+
 }
 
+
+.jobcontentshow{
+  grid-column: 2/3;
+  padding: 2em 1em 1em 1em;
+  background-color: #ffffffd9;
+  padding-top: 0px;
+  margin-top: 7em;
+  h3{
+  color: black;
+  font-family: nunito;
+  font-weight: 600;
+  padding-bottom: 15px;
+  font-size: 21px;
+
+  }
+
+}
 
 .jobcontent h3{
   color: black;
