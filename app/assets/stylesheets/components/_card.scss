@@ -5,7 +5,10 @@
   grid-gap: 10px;
   padding: 20px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
+
 }
+
+
 
 
 .question{
@@ -109,6 +112,18 @@ ol:hover{
   color: #1D3863;
   }
 }
+
+
+.socialicon{
+  transition: transform .2s;
+
+  :hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+}
+
 
 
 
