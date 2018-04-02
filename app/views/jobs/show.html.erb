@@ -1,51 +1,49 @@
-<div class="bannershow">
-  <div class="taglineshow">
+<div class="wrapper">
+  <div class="bannerblack">
+    <div class="tagline">
+      <h3>  Portal de empleo remoto en español</h3>
+      <p> Recibe las últimas ofertas cada semana</p>
+      <div class="formulaire">
+       <form action="https://nowmada.us17.list-manage.com/subscribe/post?u=06681d916dc998e5e02141ce6&amp;id=299f6fa8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
 
-    <h3>  Portal de empleo remoto en español
-    </h3>
-    <p> Recibe las últimas ofertas cada semana</p>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@email.com" required>
 
-    <form action="https://nowmada.us17.list-manage.com/subscribe/post?u=06681d916dc998e5e02141ce6&amp;id=299f6fa8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@email.com" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups - ok-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06681d916dc998e5e02141ce6_299f6fa8b7" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06681d916dc998e5e02141ce6_299f6fa8b7" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </form>
       </div>
-    </form>
 
-  </div>
 </div>
-
+  </div>
   <div class="wrapperjob">
-    <div class="jobcontentshow">
-      <h3><%= @job.title%></b>-<b><%= @job.company%></h3>
+        <h3><%= @job.title%> - <%= @job.company%></h3>
 
-        <div class="description">
-          <%= simple_format(@job.desc) %>
-        </div>
-        <div class="email">
-          <p><%= @job.contact %></p>
-        </div>
-
-
-
-        <div class="apply">
-
-           <%= link_to "Aplicar", "#{@job.url}?utm=nowmada",target: "_blank", class: 'btnshow'%>
+          <div class="description">
+            <%= simple_format(@job.desc) %>
+          </div>
+          <div class="email">
+            <p><%= @job.contact %></p>
+          </div>
+          <div class="apply">
+            <%= link_to "Aplicar", "#{@job.url}?utm=nowmada",target: "_blank", class: 'btnshow'%>
             <%=link_to "Volver", root_path, class: 'btn btn-primary', class: 'btnshow'%>
 
-          <div class="delete">
-
-          <% if current_user && current_user.skills == false %>
-            <%= link_to job_path(@job), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>
-              <p>Delete</p>
-            <% end %>
-            <%= link_to 'Edit', edit_job_path, class: 'btn btn-success'%>
-          <% end %>
-        </div>
-
-        </div>
+            <div class="delete">
+              <% if current_user && current_user.skills == false %>
+                <%= link_to job_path(@job),
+                  method: :delete, data: { confirm: 'Are you sure?' },
+                  class: 'btn btn-danger' do %>
+                    <p>Delete</p>
+                  <% end %>
+                <%= link_to 'Edit', edit_job_path, class: 'btn btn-success'%>
+              <% end %>
+             </div>
+            </div>
+          </div>
       </div>
+    </div>
+</div>
+ </div>
 

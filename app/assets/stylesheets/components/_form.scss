@@ -1,32 +1,4 @@
-.banner{
-  background-size: cover;
-  text-align: center;
-  opacity: 0.8;
-  height:100vh;
-}
 
-.tagline{
-  padding: 8em;
-}
-
-
-.tagline h1{
-  font-size: 36px;
-}
-
-.tagline h1, h2 , h3{
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
-.tagline p{
-color: white;
-font-weight: 400;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: .2em;
-}
 
 #mc_embed_signup_scroll{
   padding-bottom: 2em;
@@ -86,9 +58,6 @@ background-color: transparent;
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-.tagline{
-  padding: 3em;
-}
 
 
 }
