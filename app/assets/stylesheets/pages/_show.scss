@@ -1,6 +1,6 @@
 
  // *{
- // border: solid 1px blue;
+ //  border: solid 1px blue;
  // }
 
 // index + show
@@ -150,6 +150,8 @@ letter-spacing: .2em;
 .wrapperjob{
   grid-row: 2/3;
   grid-column: 2/3;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
 
   h3{
     color: black;
@@ -200,6 +202,8 @@ letter-spacing: .2em;
 
   .wrapperjob{
     display: block;
+    margin-right: 0em;
+    margin-left: 0em;
   }
 
 
@@ -229,7 +233,7 @@ letter-spacing: .2em;
   }
 
   .jobdetailsright{
-  margin: 0em -2.7em -1.5em -5em;
+  margin: 0em -1em -1.5em -5em;
   }
 
   .photocard{

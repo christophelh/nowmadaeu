@@ -129,6 +129,10 @@ ol:hover{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+  .card{
+    display:block;
+  }
+
 .jobtitle{
   padding-left: 2em;
   text-align: center;
