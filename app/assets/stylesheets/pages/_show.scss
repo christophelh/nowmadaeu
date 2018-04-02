@@ -148,26 +148,30 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-.wrapperjob{
-  display: block;
-}
+  .wrapperjob{
+    display: block;
+  }
 
-.card{
-  display: block;
-}
+  .card{
+    display: block;
+  }
 
-.photocard{
-      text-align: center;
-}
+  .photocard{
+        text-align: center;
+  }
 
-.description p{
-  font-size: 14.4px;
-}
+  .description p{
+    font-size: 14.4px;
+  }
 
 
-.email p{
-  font-size: 15.4px;
+  .email p{
+    font-size: 15.4px;
 
-}
+  }
+
+  .jobcontentshow{
+    margin-top: 15em;
+  }
 
 }
