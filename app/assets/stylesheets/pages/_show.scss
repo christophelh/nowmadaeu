@@ -12,11 +12,9 @@
 
 }
 
-
-
 .tagline{
 
-  padding-top: 1em;
+  padding-top: 7em;
 
   h3{
     font-family: lato;
@@ -34,12 +32,9 @@
 }
 
 
-
-
-
-
 .tagline h1{
   font-size: 36px;
+  margin-top: 0px;
 }
 
 .tagline h1, h2 , h3{
@@ -73,8 +68,6 @@ letter-spacing: .2em;
     color: white;
   }
 }
-
-
 
 .jobcontent{
   padding: 2em 1em 1em 1em;
@@ -124,9 +117,6 @@ letter-spacing: .2em;
   margin: 0em -1em 0.5em -3em;
   text-align: center;
 }
-
-
-
 
 
 // show page //
@@ -204,6 +194,11 @@ letter-spacing: .2em;
     display: block;
     margin-right: 0em;
     margin-left: 0em;
+
+    h3{
+      padding-top: 37px;
+      font-size: 16px
+    }
   }
 
 
