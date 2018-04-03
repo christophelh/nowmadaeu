@@ -184,9 +184,8 @@ letter-spacing: .2em;
   margin-bottom: 0px;
 }
 
-@media only screen
-  and (min-device-width: 300px)
-  and (max-device-width: 480px)
+
+  @media screen and (max-width: 500px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
 
@@ -199,6 +198,15 @@ letter-spacing: .2em;
       padding-top: 37px;
       font-size: 16px
     }
+  }
+
+  .jobtitle{
+    text-align: center;
+  }
+
+
+  .tagline{
+    padding-top: 0em;
   }
 
 
@@ -215,9 +223,7 @@ letter-spacing: .2em;
   }
 
 
-  .tagline{
-    padding: 0em;
-  }
+
 
   .bannershow{
     height:451px;
