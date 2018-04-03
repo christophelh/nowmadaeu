@@ -31,6 +31,7 @@
           <p>Últimas oportunidades</p>
         </ol>
         <% @weekjobs.each do |job| %>
+        <%=link_to job_path(job) do%>
         <ol class ="card">
 
           <div class="photocard">
@@ -39,7 +40,7 @@
 
           <div class="jobtitle">
             <h5>
-              <%=link_to job.title, job_path(job)%>
+              <%=job.title%>
             </h5>
             <p><span style="color:#777676">
               <%=job.company%></span> </p>
@@ -52,6 +53,7 @@
             </div>
           </ol>
           <% end %>
+        <% end %>
 
 
 
@@ -80,6 +82,7 @@
             <p>Oportunidades anteriores</p>
           </ol>
          <% @alljobs.each do |job| %>
+         <%=link_to job_path(job) do%>
          <ol class ="card">
 
            <div class="photocard">
@@ -88,7 +91,7 @@
 
            <div class="jobtitle">
              <h5>
-               <%=link_to job.title, job_path(job)%>
+               <%=job.title%>
              </h5>
              <p><span style="color:#777676">
                <%=job.company%></span> </p>
@@ -100,6 +103,7 @@
               </p>
             </div>
            </ol>
+           <% end %>
            <% end %>
          </ul>
        </div>

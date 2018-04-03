@@ -45,7 +45,7 @@ class JobsController < ApplicationController
   def show
     @job  = Job.friendly.find(params[:id])
     @user = current_user
-    @meta_title = meta_title "Trabajo remoto #{@job.category} en español"
+    @meta_title = meta_title "Trabajo remoto #{@job.title} en español"
   end
 
   def destroy
