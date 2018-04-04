@@ -1,17 +1,16 @@
 # frozen_string_literal: true
+
 require 'date'
+
 class JobsController < ApplicationController
   attr_accessor :slug
   before_action :set_job, only: %i[show edit update destroy]
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-     # @weekjobs = Job.where('created_at <= ? and created_at > ?', Date.today, Date.today - 4 ).order("created_at DESC")
 
-     #  @alljobs = Job.where('created_at > ?', (Date.today - 6)).order("created_at DESC")
-
-     @weekjobs = Job.past_week.order("created_at DESC")
-     @alljobs = Job.before(Date.today - 7 ).distinct.order("created_at DESC")
+    @weekjobs = Job.past_week.order("created_at DESC")
+    @alljobs = Job.before(Date.today - 7 ).distinct.order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
   end
@@ -45,7 +44,7 @@ class JobsController < ApplicationController
   def show
     @job  = Job.friendly.find(params[:id])
     @user = current_user
-    @meta_title = meta_title "Trabajo remoto #{@job.title} en español"
+    @meta_title = meta_title "Trabajo remoto #{@job.category} @ #{@job.company.capitalize}"
   end
 
   def destroy

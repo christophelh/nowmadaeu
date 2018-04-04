@@ -2,28 +2,24 @@
 source 'https://rubygems.org'
 
 ruby '2.3.5'
+gem 'by_star', git: "git://github.com/radar/by_star"
+gem 'bootstrap-sass'
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
+gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'figaro'
+gem 'friendly_id', '~> 5.1.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.5'
 gem 'rubocop', '~> 0.54.0', require: false
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'webpacker'
-gem 'by_star', git: "git://github.com/radar/by_star"
-
-gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-# gem 'jbuilder', '~> 2.5'
-gem 'friendly_id', '~> 5.1.0'
-
-gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'sitemap_generator'
-
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
+gem 'webpacker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

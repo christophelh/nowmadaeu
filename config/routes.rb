@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 
   root 'jobs#index'
   resources :jobs, except: :index
+
+  #workshop
+
+  get '/workshop/', to: 'pages#workshop'
+  get '/trabajo/', to: 'pages#trabajo'
+
 end
