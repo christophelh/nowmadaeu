@@ -15,6 +15,13 @@
 
 .card h3, h4 , h5 , p{
   font-family: $body-font;
+  h3{
+    color: black;
+  }
+
+.card p{
+    font-size: 13px;
+  }
 }
 
 ul{

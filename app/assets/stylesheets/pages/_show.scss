@@ -74,6 +74,9 @@ letter-spacing: .2em;
   background-color: #ffffffd9;
   padding-top: 0px;
 
+  a{
+  font-weight: normal;
+}
 }
 
 
@@ -88,6 +91,7 @@ letter-spacing: .2em;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
+
 
 
 .jobcontent h3{
@@ -108,10 +112,7 @@ letter-spacing: .2em;
 
 }
 
-.jobcontent a{
-  color: black;
-  font-weight: bold;
-}
+
 
 .jobdetailsright{
   margin: 0em -1em 0.5em -3em;

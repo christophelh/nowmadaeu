@@ -42,11 +42,15 @@
             <h5>
               <%=job.title%>
             </h5>
-            <p><span style="color:#777676">
-              <%=job.company%></span> </p>
+            <p><span style="color:#777676;font-size: 13px">
+              <%=job.company%>
+              </span> </p>
+            <p><span style="color:#cc3838;font-size: 13px;border: solid 2px;padding: 0.25em">
+              <%=job.category.capitalize%>
+              </span> </p>
             </div>
             <div class="date">
-              <p small><span style="color:#000;font-style:italic;font-size: 12px";>
+              <p small><span style="color:#000;font-style:italic;font-size: 9px";>
                 <% days = (Date.today - job.created_at.to_date).to_i  %>
                 Publicado <%= days %> día(s)</span>
               </p>
