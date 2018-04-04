@@ -93,7 +93,7 @@
              <%= cl_image_tag job.photo, height: 50, width: 50, crop: :fill %>
            </div>
 
-           <div class="jobtitle">
+          <div class="jobtitle">
             <h5>
               <%=job.title%>
             </h5>
@@ -101,8 +101,9 @@
               <%=job.company%>
               </span> </p>
             <p><span style="color:#cc3838;font-size: 13px;border: solid 2px;padding: 0.25em">
-              <%=job.category.capitalize%>
-              </span> </p>
+              <%=job.category.capitalize%></span>
+              <span style="color:#1c86cc;font-size: 13px;border: solid 2px;padding: 0.25em"><%=job.language%></span>
+               </p>
             </div>
             <div class="date">
               <p small><span style="color:#000;font-style:italic;font-size: 9px";>
