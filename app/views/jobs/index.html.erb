@@ -46,8 +46,9 @@
               <%=job.company%>
               </span> </p>
             <p><span style="color:#cc3838;font-size: 13px;border: solid 2px;padding: 0.25em">
-              <%=job.category.capitalize%>
-              </span> </p>
+              <%=job.category.capitalize%></span>
+              <span style="color:#1c86cc;font-size: 13px;border: solid 2px;padding: 0.25em"><%=job.language%></span>
+               </p>
             </div>
             <div class="date">
               <p small><span style="color:#000;font-style:italic;font-size: 9px";>
@@ -61,22 +62,21 @@
 
 
 
-        <ol class="card">
-            <div class="question">
-            <h5>Síguenos para acceder a las últimas oportunidades</h5>
-            <div class="socialicon">
-              <a href="https://www.facebook.com/groups/nowmada/" id= "socialicon" target="_blank">
-                <%= image_tag("fb.png", size: "50x50", target: '_blank') %>
-                <a href="https://twitter.com/esnowmada" target="_blank">
-                <%= image_tag("twitter.png", size: "50x50", target: '_blank') %>
-              </a>
-                <a href="https://instagram.com/esnowmada" target="_blank">
-                <%= image_tag("insta.png", size: "40x40") %>
-              </a>
-
-             </div>
-        </div>
-        </ol>
+            <ol class="card">
+              <div class="question">
+                <h5>Síguenos para acceder a las últimas oportunidades</h5>
+                <div class="socialicon">
+                  <a href="https://www.facebook.com/groups/nowmada/" id= "socialicon" target="_blank">
+                    <%= image_tag("fb.png", size: "50x50", target: '_blank') %>
+                  <a href="https://twitter.com/esnowmada" target="_blank">
+                    <%= image_tag("twitter.png", size: "50x50", target: '_blank') %>
+                  </a>
+                  <a href="https://instagram.com/esnowmada" target="_blank">
+                    <%= image_tag("insta.png", size: "40x40") %>
+                  </a>
+                </div>
+              </div>
+            </ol>
         </ul>
 
        <!-- <div class="jobdetailsright"> -->
