@@ -4,5 +4,5 @@
 # User-agent: *
 # Disallow: /
 User-agent: *
-Sitemap: https://nowmada.eu/sitemap.xml.gz
+Sitemap: http://nowmada.eu/sitemap.xml
 
