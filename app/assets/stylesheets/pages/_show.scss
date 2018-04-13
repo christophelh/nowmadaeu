@@ -9,11 +9,9 @@
   display: grid;
   grid-template-rows: 30 1fr;
   grid-template-columns: 15% 70% 15% ;
-
 }
 
 .tagline{
-
   padding-top: 7em;
 
   h3{
@@ -32,25 +30,24 @@
 }
 
 
-.tagline h1{
-  font-size: 36px;
-  margin-top: 0px;
-}
-
 .tagline h1, h2 , h3{
   color: white;
   text-transform: uppercase;
   letter-spacing: .2em;
-}
 
-.tagline p{
-color: white;
-font-weight: 400;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: .2em;
-}
+    h1{
+    font-size: 36px;
+    margin-top: 0px;
+  }
 
+    p{
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  }
+}
 
 
 // Index page //
@@ -76,7 +73,15 @@ letter-spacing: .2em;
 
   a{
   font-weight: normal;
-}
+  }
+
+ h3{
+  color: black;
+  font-family: nunito;
+  font-weight: 600;
+  padding-bottom: 15px;
+  font-size: 21px;
+  }
 }
 
 
@@ -92,16 +97,6 @@ letter-spacing: .2em;
   letter-spacing: .2em;
 }
 
-
-
-.jobcontent h3{
-  color: black;
-  font-family: nunito;
-  font-weight: 600;
-  padding-bottom: 15px;
-  font-size: 21px;
-}
-
 .description p{
   font-size: 15.4px;
   line-height: 1.5;
@@ -111,7 +106,6 @@ letter-spacing: .2em;
   font-family: nunito;
 
 }
-
 
 
 .jobdetailsright{
@@ -127,7 +121,7 @@ letter-spacing: .2em;
   grid-column: 1/4;
   text-align: center;
   background-size: cover;
-  background-color: black;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   text-align: center;
   opacity: 0.8;
   height:70vh;
