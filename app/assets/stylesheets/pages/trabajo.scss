@@ -1,0 +1,13 @@
+.bannerblack-company{
+  grid-row: 1/2;
+  grid-column: 1/4;
+  text-align: center;
+  background-size: cover;
+  height:100vh;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  h3,h4,p{
+    color: white;
+  }
+}
+
+

@@ -24,3 +24,8 @@ Chris.save!
 Intern.save!
 
 puts 'Users created... '
+
+
+puts 'Creating job'
+
+

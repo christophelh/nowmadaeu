@@ -13,6 +13,7 @@ class JobsController < ApplicationController
     @alljobs = Job.before(Date.today - 7 ).distinct.order("created_at DESC")
     @user = current_user
     @meta_title = meta_title 'Portal de empleo remoto y recursos en español'
+    @question = Question.new
   end
 
   def new
