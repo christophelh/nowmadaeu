@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   #workshop
 
   get '/workshop/', to: 'pages#workshop'
+  get '/qa/', to: 'pages#qa'
   get '/trabajo/', to: 'pages#trabajo'
 
 end
