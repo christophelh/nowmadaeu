@@ -20,7 +20,7 @@
 
 
 .tagline{
-  padding-top: 7em;
+  padding: 7em;
 
   h3{
     font-family: lato;
@@ -209,7 +209,7 @@
 
 
   .tagline{
-    padding-top: 0em;
+    padding: 0em;
 
     h1{
       margin-top: 0px;
@@ -231,6 +231,10 @@
       color: white;
       padding-top: 1em;
     }
+  }
+
+  .question{
+    padding-left: 43px;
   }
 
 
