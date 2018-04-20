@@ -19,13 +19,18 @@
   </div>
   <div class="wrapperjob">
         <h3><%= @job.title%> - <%= @job.company%></h3>
-
           <div class="description">
             <%= simple_format(@job.desc) %>
           </div>
           <div class="email">
             <p><%= @job.contact %></p>
           </div>
+                  <% tweet = @job.title
+            uri = Addressable::URI.parse(request.original_url).normalize
+        %>
+
+
+            <%= link_to 'tweet' , "https://twitter.com/intent/tweet?text=#{'Nueva Opportunidad: ' + tweet}&url=#{request.original_url}&hashtags=teletrabajo%2Ctrabajoremoto%2Cempleoremoto", class: 'twitter-share-button' %>
           <div class="apply">
             <%= link_to "Aplicar", "#{@job.url}?utm=nowmada",target: "_blank", class: 'btnshow'%>
             <%=link_to "Volver", root_path, class: 'btn btn-primary', class: 'btnshow'%>
