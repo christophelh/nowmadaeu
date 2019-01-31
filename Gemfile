@@ -19,6 +19,7 @@ gem 'simple_form'
 gem 'sitemap_generator'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem "sprockets", ">= 3.7.2"
 gem 'webpacker'
 gem 'addressable'
 
