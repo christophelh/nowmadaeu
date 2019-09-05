@@ -1,4 +1,4 @@
-Job board targeting the Spanig markets
+#Job board build with rails
 
 Framework
 
