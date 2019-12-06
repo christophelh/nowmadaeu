@@ -11,7 +11,7 @@ gem 'devise'
 gem 'figaro'
 gem 'friendly_id', '~> 5.1.0'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 gem 'rails', '~> 5.1.5'
 gem 'rubocop', '~> 0.54.0', require: false
 gem 'sass-rails', '~> 5.0'
