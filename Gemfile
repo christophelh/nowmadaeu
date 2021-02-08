@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.3.5'
 gem 'by_star', git: "git://github.com/radar/by_star"
 gem 'bootstrap-sass'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 2.1'
 gem 'cloudinary'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
